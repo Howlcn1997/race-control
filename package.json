@@ -1,6 +1,6 @@
 {
   "name": "race-control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个用于处理异步操作竞态条件的 JavaScript 工具。它确保只有最新的操作会被执行，并且会取消任何先前的操作，帮助你更好地管理异步任务的执行顺序",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -15,6 +15,7 @@
     "race condition",
     "control",
     "race",
+    "promise",
     "竞态",
     "竞态问题"
   ],

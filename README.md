@@ -48,7 +48,7 @@ function SearchList() {
 
   return (
     <div>
-      <input onInput={}/>
+      <input onInput={onInputHandle}/>
       <ul>
         {list.map((i) => (
           <li key={i.id}>{i}</li>
