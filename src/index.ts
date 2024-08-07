@@ -5,7 +5,7 @@ export default function raceControl(
   let index = 0;
   const aborts: AbortController[] = [];
 
-  return function controller(...args: any[]) {
+  return function controller<T extends any>(...args: any[]): Promise<T> {
     const currentIdx = ++index;
 
     if (abortSignal) {
