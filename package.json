@@ -1,0 +1,33 @@
+{
+  "name": "race-control",
+  "version": "1.0.0",
+  "description": "一个用于处理异步操作竞态条件的 JavaScript 工具。它确保只有最新的操作会被执行，并且会取消任何先前的操作，帮助你更好地管理异步任务的执行顺序",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [
+    "async control",
+    "race condition",
+    "control",
+    "race",
+    "竞态",
+    "竞态问题"
+  ],
+  "authors": [],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "father": "^4.4.6"
+  }
+}
